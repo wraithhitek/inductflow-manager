@@ -79,7 +79,7 @@ export default function LoginPage() {
           {/* Left Side: Enhanced image section */}
           <div className="relative w-full md:w-1/2 min-h-80 md:min-h-full animate-slideInLeft">
             <img
-              src="/modern-metro-train-illustration-with-geometric-pat.jpg"
+              src="/pic.jpg"
               alt="Kochi Metro Train Illustration"
               className="absolute inset-0 object-cover w-full h-full"
             />
