@@ -4,10 +4,10 @@ import { cn } from "@/lib/utils";
 
 const menuItems = [
   { name: "Dashboard", active: false, route: "/dashboard" },
-  { name: "Upload Data", active: false, route: "/" },
+  { name: "Upload Data", active: false, route: "/upload-data" },
   { name: "Induction Plan", active: true, route: "/" },
-  { name: "History", active: false, route: "/" },
-  { name: "Admin", active: false, route: "/" },
+  { name: "History", active: false, route: "/history" },
+  { name: "Admin", active: false, route: "/admin" },
   { name: "Help", active: false, route: "/" },
 ];
 

@@ -5,6 +5,9 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Dashboard from "./pages/Dashboard";
+import UploadData from "./pages/UploadData";
+import History from "./pages/History";
+import Admin from "./pages/Admin";
 import Maintenance from "./pages/Maintenance";
 import Cleaning from "./pages/Cleaning";
 import Marketing from "./pages/Marketing";
@@ -21,6 +24,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/upload-data" element={<UploadData />} />
+          <Route path="/history" element={<History />} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="/maintenance" element={<Maintenance />} />
           <Route path="/cleaning" element={<Cleaning />} />
           <Route path="/marketing" element={<Marketing />} />
