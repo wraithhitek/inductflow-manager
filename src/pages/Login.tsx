@@ -17,7 +17,7 @@ export default function LoginPage() {
     // Simulate loading
     setTimeout(() => {
       setIsLoading(false)
-      navigate("/home")
+      navigate("/dashboard")
     }, 2000)
   }
 
