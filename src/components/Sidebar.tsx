@@ -1,16 +1,19 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
 const menuItems = [
-  { name: "Dashboard", active: false },
-  { name: "Upload Data", active: false },
-  { name: "Induction Plan", active: true },
-  { name: "History", active: false },
-  { name: "Admin", active: false },
-  { name: "Help", active: false },
+  { name: "Dashboard", active: false, route: "/dashboard" },
+  { name: "Upload Data", active: false, route: "/" },
+  { name: "Induction Plan", active: true, route: "/" },
+  { name: "History", active: false, route: "/" },
+  { name: "Admin", active: false, route: "/" },
+  { name: "Help", active: false, route: "/" },
 ];
 
 export function Sidebar() {
+  const navigate = useNavigate();
+  
   return (
     <nav className="w-60 bg-card shadow-lg flex flex-col min-h-screen border-r border-border">
       <div className="p-6">
@@ -22,6 +25,7 @@ export function Sidebar() {
           {menuItems.map((item) => (
             <li key={item.name}>
               <button
+                onClick={() => navigate(item.route)}
                 className={cn(
                   "w-full text-left px-4 py-3 rounded-lg transition-colors text-sm font-medium",
                   item.active
